@@ -1,0 +1,31 @@
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: RGB(140, 207, 223); /* Color de fondo */
+    color: black; /* Color del texto */
+    text-align: left;
+    padding: 10px 0px; /* Espaciado interior para dar altura */
+    z-index: 1000; /* Asegura que el header esté sobre otros contenidos */
+}
+
+header nav ul {
+    list-style: none; /* Elimina los estilos predeterminados de lista */
+    display: flex; /* Dispone los elementos de la lista en línea */
+    padding: 0; /* Elimina el padding predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+    gap: 10px;
+}
+header nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: black; /* Color del texto de los enlaces */
+}
+
+.logo img {
+    width: 75px; /* Cambia esto al ancho deseado */
+    height: auto; /* Esto mantiene la proporción del logo */
+}
