@@ -1,3 +1,7 @@
+body {
+    padding-top: 70px; /* Ajusta este valor al alto de tu cabecera */
+}
+
 header {
     position: fixed;
     display: flex;
