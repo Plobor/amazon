@@ -1,35 +1,88 @@
+* {                     
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 body {
-    padding-top: 70px; /* Ajusta este valor al alto de tu cabecera */
+    padding-top: 0; /* Ajusta este valor al alto de tu cabecera */
 }
 
 header {
     position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
     background-color: RGB(140, 207, 223); /* Color de fondo */
     color: black; /* Color del texto */
-    text-align: left;
-    padding: 10px 0px; /* Espaciado interior para dar altura */
+    text-align: center;
     z-index: 1000; /* Asegura que el header esté sobre otros contenidos */
+}
+
+.contacto img {
+    display: inline-block; /* Hace que la imagen se muestre como un bloque, permitiendo que ocupe el ancho disponible */
+    width: 8%; /* Mantiene la proporción original de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen, ajustando su altura automáticamente */
+}
+.contacto02 {
+    width: 100%; /* Esto hace que el contenedor ocupe todo el ancho del navegador */
+    background-color: white; /* Establece el color de fondo del contenedor a blanco */
+    text-align: left; /* Alinea el contenido (imagen) a la izquierda */
+    float: left;
+
+}
+
+.flotar-derecha {
+    float: right; /* Alinea estas imágenes a la derecha */
+}
+
+.titulo h1 {
+    margin: 0; /* Elimina los márgenes predeterminados */
+    display: inline-block; /* Permite que el h1 se trate como en línea pero respetando el padding/margin */
+    vertical-align: middle; /* Intenta alinear verticalmente, pero puede no tener el efecto deseado sin display: table-cell */
+    line-height: normal; /* Restablece el line-height para el contenido del h1 si es necesario */
+    transform: translateY(50%);
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente el nav en el header */
 }
 
 header nav ul {
     list-style: none; /* Elimina los estilos predeterminados de lista */
-    display: flex; /* Dispone los elementos de la lista en línea */
     padding: 0; /* Elimina el padding predeterminado */
     margin: 0; /* Elimina el margen predeterminado */
-    gap: 10px;
+    text-align: center; /* Centra los elementos de la lista si es necesario */
 }
+
+header nav ul li {
+    display: inline-block; /* Muestra los elementos de la lista en línea pero permitiendo propiedades de bloque */
+    margin-right: 10px; /* Espacio entre elementos de la lista */
+}
+
 header nav ul li a {
     text-decoration: none; /* Elimina el subrayado de los enlaces */
     color: black; /* Color del texto de los enlaces */
 }
 
 .logo img {
+    vertical-align: middle; /* Alinea verticalmente el logo con el texto/elementos de la lista */
     width: 75px; /* Cambia esto al ancho deseado */
     height: auto; /* Esto mantiene la proporción del logo */
+    float: left; /* Flota el logo a la izquierda */
+    margin-right: 20px; /* Espacio entre el logo y los elementos de navegación si es necesario */
+}
+
+#principal img {
+    margin-top: -250px; /* Ajusta este valor para recortar la parte superior de la imagen */
+    width: 100%; /* O 'auto' si no necesitas ajustar el ancho */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.grupo-derecha {
+    float: right;
+    display: inline-block;
 }
