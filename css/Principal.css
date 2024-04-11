@@ -15,20 +15,21 @@ header {
     width: 100%;
     background-color: RGB(140, 207, 223); /* Color de fondo */
     color: black; /* Color del texto */
-    text-align: center;
+    text-align: left;
     z-index: 1000; /* Asegura que el header esté sobre otros contenidos */
 }
 
 .contacto img {
     display: inline-block; /* Hace que la imagen se muestre como un bloque, permitiendo que ocupe el ancho disponible */
     width: 8%; /* Mantiene la proporción original de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen, ajustando su altura automáticamente */
+    height: auto; /* Mantiene la proporción de la imagen, ajustando su altura automáticamente */     
 }
 .contacto02 {
     width: 100%; /* Esto hace que el contenedor ocupe todo el ancho del navegador */
     background-color: white; /* Establece el color de fondo del contenedor a blanco */
     text-align: left; /* Alinea el contenido (imagen) a la izquierda */
-    float: left;
+    display: inline-block;
+    border: 1px solid red;
 
 }
 
@@ -45,8 +46,8 @@ header {
 }
 
 nav {
-    position: absolute;
-    right: 0;
+    clear: right;
+    
     top: 50%;
     transform: translateY(-50%); /* Centra verticalmente el nav en el header */
 }
@@ -55,7 +56,7 @@ header nav ul {
     list-style: none; /* Elimina los estilos predeterminados de lista */
     padding: 0; /* Elimina el padding predeterminado */
     margin: 0; /* Elimina el margen predeterminado */
-    text-align: center; /* Centra los elementos de la lista si es necesario */
+    text-align: right; /* Centra los elementos de la lista si es necesario */
 }
 
 header nav ul li {
