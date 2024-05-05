@@ -1,13 +1,6 @@
-* {                     
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
 body {
-    padding-top: 0; /* Ajusta este valor al alto de tu cabecera */
+    padding-top: 110px;
 }
-
 header {
     position: fixed;
     top: 0;
@@ -86,4 +79,29 @@ header nav ul li a {
 .grupo-derecha {
     float: right;
     display: inline-block;
+}
+
+.titulo {
+    text-align: center;
+}
+.boton {
+    display: block;
+            padding: 10px 20px;
+            text-align: center;
+            margin: 5px 900px; /* Añade un poco de espacio arriba y abajo */
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none; /* Elimina el subrayado típico de los enlaces */
+            border-radius: 5px;
+            cursor: pointer;
+
+        .boton:hover {
+            background-color: #0056b3;
+        }
+}
+.centrado {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
 }
