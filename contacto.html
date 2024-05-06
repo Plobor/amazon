@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/Principal.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <!--Enlace a contactos-->
+      <div class="CabecerasImagenes">
+        <a href="contacto.html" class="contacto">
+          <img src="images/Contactoweb-300x100.jpg" alt="Contacto"
+        /></a>
+        <!--Enlace a España-->
+        <div class="grupo-derecha">
+          <a href="index.html" class="flotar-derecha">
+            <img src="images/es.svg" alt="España"
+          /></a>
+          <!--Enlace a Inglaterra-->
+          <a href="index2.html">
+            <img src="images/en.svg" alt="Inglaterra"
+          /></a>
+          <!-- Enlace al inicio con el logo como imagen -->
+        </div>
+      </div>
+      <a href="index.html" class="logo">
+        <img src="images/Homekittchen.jpeg" alt="Logo de la empresa" />
+      </a>
+      <div class="titulo"><h1>Cocina y Hogar HOME KITTCHEN</h1></div>
+      <nav>
+        <ul>
+          <li><a href="Index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <article>
+      <section>
+        <h2>¡Nos encantaría saber de ti!</h2>
+        <p>
+          Ya sea que tengas una pregunta, necesites asistencia o simplemente
+          quieras compartir tus pensamientos, estamos aquí para escuchar.
+          Nuestro equipo se compromete a ofrecerte el mejor servicio y soporte.
+        </p>
+
+        <p>
+          Ponte en contacto con nosotros a través de cualquiera de los
+          siguientes medios: Correo Electrónico: Envíanos tus preguntas a
+          contacto@Homekittchen.com y recibirás una respuesta en menos de 24
+          horas.
+        </p>
+        <p>
+          Teléfono: Llámanos al +34 687 567 987. Nuestro equipo está disponible
+          de lunes a viernes, de 9:00 a 18:00 hrs.
+        </p>
+        <p>
+          Dirección: Visítanos en Calle César Manrique. Nuestra oficina está
+          abierta de lunes a viernes, de 9:00 a 17:00 hrs.
+        </p>
+        <p>
+          Redes Sociales: Síguenos y envíanos un mensaje directo a través de
+          nuestras redes sociales. Encuéntranos como @Homekittchen en Twitter,
+          Facebook e Instagram.
+        </p>
+        <h3>Formulario de Contacto:</h3>
+        <p>
+          Si prefieres, utiliza el siguiente formulario para dejarnos un mensaje
+          y nos pondremos en contacto contigo lo antes posible
+        </p>
+      </section>
+      <form action="enviar.php" method="post">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </article>
+  </body>
+</html>
