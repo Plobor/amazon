@@ -1,6 +1,9 @@
 body {
     padding-top: 110px;
+    background-color: #EEEDF3;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
 }
+
 header {
     position: fixed;
     top: 0;
@@ -31,6 +34,7 @@ header {
 }
 
 .titulo h1 {
+    font-size: 50px;
     margin: 0; /* Elimina los márgenes predeterminados */
     display: inline-block; /* Permite que el h1 se trate como en línea pero respetando el padding/margin */
     vertical-align: middle; /* Intenta alinear verticalmente, pero puede no tener el efecto deseado sin display: table-cell */
@@ -110,3 +114,12 @@ footer a {
     display: block;
 }
 
+footer {
+    position: relative; /* Posicionamiento absoluto para el footer */
+   
+    bottom: 0; /* Alineado al fondo del contenedor */
+    width: 100%; /* Ancho completo para que abarque toda la pantalla */
+    background-color: RGB(140, 207, 223); /* Color de fondo del footer */
+    color: black; /* Color del texto */
+    padding: 10px 0; /* Relleno vertical para el texto */
+}
